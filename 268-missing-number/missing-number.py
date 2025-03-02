@@ -5,12 +5,6 @@ class Solution(object):
         :rtype: int
         """
 
-        temp = []
-
-        for i in range(0, len(nums)+1):
-            temp.append(i)
-
-        for x in temp:
-            if x not in nums:
-                return x
+        # gaus formula
+        return (((len(nums) * (len(nums) + 1)) / 2) - sum(nums))
         
