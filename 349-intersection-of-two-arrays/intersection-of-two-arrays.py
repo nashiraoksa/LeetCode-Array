@@ -6,11 +6,5 @@ class Solution(object):
         :rtype: List[int]
         """
 
-        temp = []
-
-        for i in set(nums2):
-            if i in nums1:
-                temp.append(i)
-
-        return temp
+        return list(set(nums1) & set(nums2))
         
