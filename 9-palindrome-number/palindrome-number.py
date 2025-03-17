@@ -5,10 +5,5 @@ class Solution(object):
         :rtype: bool
         """
         numStr = str(x)
-
-
-        if numStr == numStr[::-1]:
-            return True
-        else:
-            return False
+        return numStr == numStr[::-1]
         
